@@ -1,9 +1,10 @@
-package Repositories;
+package Repository;
 
 import Domain.IStoreRepository;
 import Domain.Store;
 
-import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
