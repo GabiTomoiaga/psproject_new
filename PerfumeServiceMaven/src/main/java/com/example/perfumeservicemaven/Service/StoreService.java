@@ -1,7 +1,7 @@
-package Service;
+package com.example.perfumeservicemaven.Service;
 
-import Domain.IStoreRepository;
-import Domain.Store;
+import com.example.perfumeservicemaven.Domain.IStoreRepository;
+import com.example.perfumeservicemaven.Domain.Store;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

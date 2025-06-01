@@ -1,13 +1,14 @@
-package Repository;
+package com.example.perfumeservicemaven.Repository;
 
-import Domain.IStoreRepository;
-import Domain.Store;
+import com.example.perfumeservicemaven.Domain.IStoreRepository;
+import com.example.perfumeservicemaven.Domain.Store;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@org.springframework.stereotype.Repository
 public class StoreRepository implements IStoreRepository {
     private Repository repository;
 
@@ -18,7 +19,7 @@ public class StoreRepository implements IStoreRepository {
     @Override
     public Boolean addStore(Store store) {
         String sql = String.format(
-                "INSERT INTO store (name, location) VALUES ('%s', '%s')",
+                "INSERT INTO stores (store_name, location) VALUES ('%s', '%s')",
                 store.getName(), store.getLocation()
         );
         return repository.executeUpdate(sql);
@@ -26,14 +27,14 @@ public class StoreRepository implements IStoreRepository {
 
     @Override
     public Boolean deleteStore(Store store) {
-        String sql = String.format("DELETE FROM store WHERE id = %d", store.getId());
+        String sql = String.format("DELETE FROM stores WHERE store_id = %d", store.getId());
         return repository.executeUpdate(sql);
     }
 
     @Override
     public Boolean updateStore(Store store) {
         String sql = String.format(
-                "UPDATE store SET name = '%s', location = '%s' WHERE id = %d",
+                "UPDATE stores SET store_name = '%s', location = '%s' WHERE id = %d",
                 store.getName(), store.getLocation(), store.getId()
         );
         return repository.executeUpdate(sql);
@@ -41,14 +42,14 @@ public class StoreRepository implements IStoreRepository {
 
     @Override
     public Store searchStore(String name) {
-        String sql = "SELECT * FROM store WHERE name = '" + name + "'";
+        String sql = "SELECT * FROM stores WHERE name = '" + name + "'";
         ResultSet rs = repository.getTable(sql);
 
         try {
             if (rs != null && rs.next()) {
                 return new Store(
-                        rs.getInt("id"),
-                        rs.getString("name"),
+                        rs.getInt("store_id"),
+                        rs.getString("store_name"),
                         rs.getString("location")
                 );
             }
@@ -62,13 +63,13 @@ public class StoreRepository implements IStoreRepository {
     @Override
     public List<Store> listStores() {
         List<Store> stores = new ArrayList<>();
-        ResultSet rs = repository.getTable("SELECT * FROM store");
+        ResultSet rs = repository.getTable("SELECT * FROM stores");
 
         try {
             while (rs != null && rs.next()) {
                 stores.add(new Store(
-                        rs.getInt("id"),
-                        rs.getString("name"),
+                        rs.getInt("store_id"),
+                        rs.getString("store_name"),
                         rs.getString("location")
                 ));
             }

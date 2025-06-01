@@ -1,13 +1,14 @@
-package Repository;
+package com.example.perfumeservicemaven.Repository;
 
-import Domain.IUserRepository;
-import Domain.Users;
-import Domain.UsersType;
+import com.example.perfumeservicemaven.Domain.IUserRepository;
+import com.example.perfumeservicemaven.Domain.Users;
+import com.example.perfumeservicemaven.Domain.UsersType;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@org.springframework.stereotype.Repository
 public class UserRepository implements IUserRepository {
     private final Repository repository;
 
@@ -26,7 +27,7 @@ public class UserRepository implements IUserRepository {
 
     @Override
     public Boolean deleteUser(Users user) {
-        String sql = String.format("DELETE FROM users WHERE id = %d", user.getId());
+        String sql = String.format("DELETE FROM users WHERE user_id = %d", user.getId());
         return repository.executeUpdate(sql);
     }
 
@@ -41,14 +42,14 @@ public class UserRepository implements IUserRepository {
 
     @Override
     public Users searchUserByName(String name) {
-        String sql = String.format("SELECT * FROM users WHERE name = '%s'", name);
+        String sql = String.format("SELECT * FROM users WHERE username = '%s'", name);
         ResultSet rs = repository.getTable(sql);
 
         try {
             if (rs != null && rs.next()) {
                 return new Users(
-                        rs.getInt("id"),
-                        rs.getString("name"),
+                        rs.getInt("user_id"),
+                        rs.getString("username"),
                         rs.getString("password"),
                         UsersType.valueOf(rs.getString("role")),
                         rs.getInt("store_id")
@@ -69,10 +70,10 @@ public class UserRepository implements IUserRepository {
         try {
             while (rs != null && rs.next()) {
                 users.add(new Users(
-                        rs.getInt("id"),
-                        rs.getString("name"),
+                        rs.getInt("user_id"),
+                        rs.getString("username"),
                         rs.getString("password"),
-                        UsersType.valueOf(rs.getString("role")),
+                        UsersType.valueOf(rs.getString("role").toUpperCase()),
                         rs.getInt("store_id")
                 ));
             }

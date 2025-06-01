@@ -1,4 +1,4 @@
-    package Domain;
+    package com.example.perfumeservicemaven.Domain;
 
     public class Stock {
         private Integer stockId;

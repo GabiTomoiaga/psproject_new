@@ -1,4 +1,4 @@
-package Repository;
+package com.example.perfumeservicemaven.Repository;
 
 import java.sql.*;
 

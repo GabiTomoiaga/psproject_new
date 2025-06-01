@@ -1,13 +1,14 @@
-package Repository;
+package com.example.perfumeservicemaven.Repository;
 
-import Domain.IStockRepository;
-import Domain.Stock;
+import com.example.perfumeservicemaven.Domain.IStockRepository;
+import com.example.perfumeservicemaven.Domain.Stock;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@org.springframework.stereotype.Repository
 public class StockRepository implements IStockRepository {
     private Repository repository;
 

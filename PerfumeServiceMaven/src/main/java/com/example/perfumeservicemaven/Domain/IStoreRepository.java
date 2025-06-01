@@ -1,4 +1,4 @@
-package Domain;
+package com.example.perfumeservicemaven.Domain;
 
 import java.util.List;
 

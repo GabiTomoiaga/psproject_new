@@ -1,6 +1,6 @@
-package Service;
+package com.example.perfumeservicemaven.Service;
 
-import Domain.Store;
+import com.example.perfumeservicemaven.Domain.Store;
 
 import java.util.List;
 

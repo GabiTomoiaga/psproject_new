@@ -1,13 +1,14 @@
-package Repository;
+package com.example.perfumeservicemaven.Repository;
 
-import Domain.IPerfumeRepository;
-import Domain.Perfume;
+import com.example.perfumeservicemaven.Domain.IPerfumeRepository;
+import com.example.perfumeservicemaven.Domain.Perfume;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@org.springframework.stereotype.Repository
 public class PerfumeRepository implements IPerfumeRepository {
     private Repository repository;
 
@@ -69,7 +70,7 @@ public class PerfumeRepository implements IPerfumeRepository {
         try {
             while (rs != null && rs.next()) {
                 perfumes.add(new Perfume(
-                        rs.getInt("id"),
+                        rs.getInt("perfume_id"),
                         rs.getString("name"),
                         rs.getString("brand"),
                         rs.getDouble("price"),

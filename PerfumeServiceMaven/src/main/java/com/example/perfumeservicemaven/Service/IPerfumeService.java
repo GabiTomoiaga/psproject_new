@@ -1,6 +1,6 @@
-package Service;
+package com.example.perfumeservicemaven.Service;
 
-import Domain.Perfume;
+import com.example.perfumeservicemaven.Domain.Perfume;
 import java.util.List;
 
 public interface IPerfumeService {

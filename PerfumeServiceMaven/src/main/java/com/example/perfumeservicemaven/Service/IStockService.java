@@ -1,6 +1,6 @@
-package Service;
+package com.example.perfumeservicemaven.Service;
 
-import Domain.Stock;
+import com.example.perfumeservicemaven.Domain.Stock;
 import java.util.List;
 
 public interface IStockService {

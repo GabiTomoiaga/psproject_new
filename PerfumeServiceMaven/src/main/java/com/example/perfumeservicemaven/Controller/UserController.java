@@ -1,8 +1,8 @@
-package Controller;
+package com.example.perfumeservicemaven.Controller;
 
-import Domain.Users;
-import Domain.UsersType;
-import Service.IUserService;
+import com.example.perfumeservicemaven.Domain.Users;
+import com.example.perfumeservicemaven.Domain.UsersType;
+import com.example.perfumeservicemaven.Service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

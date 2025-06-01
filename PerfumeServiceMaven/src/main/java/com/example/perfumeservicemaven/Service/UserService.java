@@ -1,8 +1,8 @@
-package Service;
+package com.example.perfumeservicemaven.Service;
 
-import Domain.IUserRepository;
-import Domain.Users;
-import Domain.UsersType;
+import com.example.perfumeservicemaven.Domain.IUserRepository;
+import com.example.perfumeservicemaven.Domain.Users;
+import com.example.perfumeservicemaven.Domain.UsersType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

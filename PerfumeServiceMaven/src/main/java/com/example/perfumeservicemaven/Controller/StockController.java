@@ -1,7 +1,7 @@
-package Controller;
+package com.example.perfumeservicemaven.Controller;
 
-import Domain.Stock;
-import Service.IStockService;
+import com.example.perfumeservicemaven.Domain.Stock;
+import com.example.perfumeservicemaven.Service.IStockService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

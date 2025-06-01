@@ -1,7 +1,7 @@
-package Service;
+package com.example.perfumeservicemaven.Service;
 
-import Domain.Users;
-import Domain.UsersType;
+import com.example.perfumeservicemaven.Domain.Users;
+import com.example.perfumeservicemaven.Domain.UsersType;
 
 import java.util.List;
 
