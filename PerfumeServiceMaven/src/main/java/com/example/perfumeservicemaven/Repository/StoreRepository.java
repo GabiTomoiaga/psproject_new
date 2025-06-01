@@ -42,7 +42,7 @@ public class StoreRepository implements IStoreRepository {
 
     @Override
     public Store searchStore(String name) {
-        String sql = "SELECT * FROM stores WHERE name = '" + name + "'";
+        String sql = "SELECT * FROM stores WHERE store_name = '" + name + "'";
         ResultSet rs = repository.getTable(sql);
 
         try {

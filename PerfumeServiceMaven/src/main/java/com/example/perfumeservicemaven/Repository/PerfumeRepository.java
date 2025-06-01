@@ -27,14 +27,14 @@ public class PerfumeRepository implements IPerfumeRepository {
 
     @Override
     public Boolean deletePerfume(Perfume perfume) {
-        String sql = String.format("DELETE FROM perfume WHERE id = %d", perfume.getId());
+        String sql = String.format("DELETE FROM perfume WHERE perfume_id = %d", perfume.getId());
         return repository.executeUpdate(sql);
     }
 
     @Override
     public Boolean updatePerfume(Perfume perfume) {
         String sql = String.format(
-                "UPDATE perfume SET name = '%s', brand = '%s', price = %f, description = '%s' WHERE id = %d",
+                "UPDATE perfume SET name = '%s', brand = '%s', price = %f, description = '%s' WHERE perfume_id = %d",
                 perfume.getName(), perfume.getBrand(), perfume.getPrice(), perfume.getDescription(), perfume.getId()
         );
         return repository.executeUpdate(sql);
@@ -48,7 +48,7 @@ public class PerfumeRepository implements IPerfumeRepository {
         try {
             if (rs != null && rs.next()) {
                 return new Perfume(
-                        rs.getInt("id"),
+                        rs.getInt("perfume_id"),
                         rs.getString("name"),
                         rs.getString("brand"),
                         rs.getDouble("price"),

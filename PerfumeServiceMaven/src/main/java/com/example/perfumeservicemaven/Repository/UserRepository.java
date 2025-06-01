@@ -19,7 +19,7 @@ public class UserRepository implements IUserRepository {
     @Override
     public Boolean addUser(Users user) {
         String sql = String.format(
-                "INSERT INTO users (name, password, role, store_id) VALUES ('%s', '%s', '%s', %d)",
+                "INSERT INTO users (username, password, role, store_id) VALUES ('%s', '%s', '%s', %d)",
                 user.getName(), user.getPassword(), user.getRole().name(), user.getStoreId()
         );
         return repository.executeUpdate(sql);
@@ -34,7 +34,7 @@ public class UserRepository implements IUserRepository {
     @Override
     public Boolean updateUser(Users user) {
         String sql = String.format(
-                "UPDATE users SET name = '%s', password = '%s', role = '%s', store_id = %d WHERE id = %d",
+                "UPDATE users SET username = '%s', password = '%s', role = '%s', store_id = %d WHERE id = %d",
                 user.getName(), user.getPassword(), user.getRole().name(), user.getStoreId(), user.getId()
         );
         return repository.executeUpdate(sql);
