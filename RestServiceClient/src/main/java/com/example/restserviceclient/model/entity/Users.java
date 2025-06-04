@@ -1,4 +1,4 @@
-package Domain;
+package com.example.restserviceclient.model.entity;
 
 public class Users {
     private Integer id;

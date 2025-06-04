@@ -1,11 +1,11 @@
-package Domain;
+package com.example.restserviceclient.model.entity;
 
-public class Store {
+public class Stores {
     private Integer id;
     private String name;
     private String location;
 
-    public Store(Integer id, String name, String location) {
+    public Stores(Integer id, String name, String location) {
         this.id = id;
         this.name = name;
         this.location = location;
