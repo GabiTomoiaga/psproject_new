@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="435.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restserviceclient.view.EmployeeViewController">
+    <children>
+        <TextField fx:id="username" layoutX="17.0" layoutY="22.0" />
+        <TextField fx:id="pass" layoutX="17.0" layoutY="50.0" />
+        <TextField fx:id="role" layoutX="17.0" layoutY="77.0" />
+        <TextField fx:id="storeId" layoutX="14.0" layoutY="104.0" />
+        <TextField fx:id="id" layoutX="17.0" layoutY="131.0" />
+        <Text layoutX="172.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+        <Text layoutX="173.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+        <Text layoutX="173.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" />
+        <Text layoutX="173.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store Id" />
+        <Text layoutX="173.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+        <Button fx:id="add" layoutX="582.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleAdd" text="Add " />
+        <Button fx:id="update" layoutX="581.0" layoutY="57.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+        <Button fx:id="delete" layoutX="583.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+        <TableView fx:id="list" layoutX="7.0" layoutY="227.0" prefHeight="208.0" prefWidth="631.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+            </columns>
+        </TableView>
+        <ChoiceBox fx:id="role" layoutY="193.0" prefWidth="150.0" />
+        <Button fx:id="apply" layoutX="582.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleApply" text="Apply" />
+        <Button fx:id="reset" layoutX="582.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleReset" text="Reset" />
+    </children>
+</AnchorPane>

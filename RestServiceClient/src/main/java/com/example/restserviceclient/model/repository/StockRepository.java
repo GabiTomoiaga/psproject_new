@@ -44,4 +44,20 @@ public class StockRepository {
             return false;
         }
     }
+    public Stock getStockByStoreAndPerfume(int storeId, int perfumeId) {
+        try {
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(baseUrl + "/check?storeId=" + storeId + "&perfumeId=" + perfumeId))
+                    .GET().build();
+
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            if (response.statusCode() == 200 && response.body() != null && !response.body().isEmpty()) {
+                return mapper.readValue(response.body(), Stock.class);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }

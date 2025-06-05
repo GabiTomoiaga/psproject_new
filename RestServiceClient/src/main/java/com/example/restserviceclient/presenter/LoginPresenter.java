@@ -2,26 +2,72 @@ package com.example.restserviceclient.presenter;
 
 import com.example.restserviceclient.model.entity.Users;
 import com.example.restserviceclient.model.repository.UserRepository;
+import com.example.restserviceclient.view.SceneLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.TextField;
+import javafx.stage.Window;
 
 import java.util.List;
 
 public class LoginPresenter {
-    private final ILoginView view;
     private final UserRepository repository;
 
-    public LoginPresenter(ILoginView view, UserRepository repository) {
-        this.view = view;
+    private TextField username;
+    private TextField password;
+
+    public LoginPresenter(UserRepository repository) {
         this.repository = repository;
     }
 
-    public void login(String username, String password) {
+    public void init() {
+        username = (TextField) lookup("#username");
+        password = (TextField) lookup("#password");
+    }
+
+    public void handleLogin() {
+        if (username == null || password == null) {
+            showError("Componenta UI nu este încărcată corect.");
+            return;
+        }
+
+        String user = username.getText();
+        String pass = password.getText();
+
+        if (user.isEmpty() || pass.isEmpty()) {
+            showError("Completează toate câmpurile!");
+            return;
+        }
+
         List<Users> users = repository.getAll();
-        for (Users user : users) {
-            if (user.getName().equals(username) && user.getPassword().equals(password)) {
-                view.onLoginSuccess(user);
+        for (Users u : users) {
+            if (u.getName().equals(user) && u.getPassword().equals(pass)) {
+                Scene scene = username.getScene();
+                switch (u.getRole().toString()) {
+                    case "EMPLOYEE" -> SceneLoader.loadScene("/frontend/view/EmployeeView.fxml", scene);
+                    case "MANAGER"  -> SceneLoader.loadScene("/frontend/view/ManagerView.fxml", scene);
+                    case "ADMIN"    -> SceneLoader.loadScene("/frontend/view/AdminView.fxml", scene);
+                }
                 return;
             }
         }
-        view.showError("Invalid username or password.");
+
+        showError("Nume sau parolă greșită.");
+    }
+
+    private void showError(String msg) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setHeaderText("Eroare la login");
+        alert.setContentText(msg);
+        alert.showAndWait();
+    }
+
+    private Object lookup(String fxId) {
+        return Window.getWindows().stream()
+                .filter(Window::isShowing)
+                .findFirst()
+                .map(Window::getScene)
+                .map(scene -> scene.lookup(fxId))
+                .orElse(null);
     }
 }
