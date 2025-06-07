@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="435.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restserviceclient.view.EmployeeViewController">
+    <children>
+        <TextField fx:id="id" layoutX="17.0" layoutY="22.0" />
+        <TextField fx:id="name" layoutX="17.0" layoutY="50.0" />
+        <TextField fx:id="brand" layoutX="17.0" layoutY="77.0" />
+        <TextField fx:id="price" layoutX="14.0" layoutY="104.0" />
+        <TextField fx:id="description" layoutX="17.0" layoutY="131.0" />
+        <Text layoutX="182.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+        <Text layoutX="173.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+        <Text layoutX="173.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand" />
+        <Text layoutX="173.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+        <Text layoutX="173.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+        <Button fx:id="add" layoutX="582.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleAdd" text="Add " />
+        <Button fx:id="update" layoutX="581.0" layoutY="57.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+        <Button fx:id="delete" layoutX="583.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+        <TableView fx:id="list" layoutX="7.0" layoutY="227.0" prefHeight="208.0" prefWidth="631.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+            </columns>
+        </TableView>
+        <ChoiceBox fx:id="brand" layoutY="193.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="price" layoutX="159.0" layoutY="193.0" prefWidth="150.0" />
+        <CheckBox fx:id="disponibility" layoutX="323.0" layoutY="195.0" mnemonicParsing="false" text="Disponibilitate" />
+        <TextField fx:id="search" layoutX="262.0" layoutY="27.0" />
+        <Button fx:id="search" layoutX="423.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+        <Button fx:id="apply" layoutX="582.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleApply" text="Apply" />
+        <Button fx:id="reset" layoutX="582.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleReset" text="Reset" />
+      <Button fx:id="export" layoutX="424.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleReset" text="Export" />
+      <ChoiceBox fx:id="exportChoice" layoutX="257.0" layoutY="68.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>

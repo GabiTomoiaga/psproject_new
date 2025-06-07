@@ -13,6 +13,12 @@ module com.example.restserviceclient {
     requires com.fasterxml.jackson.databind;
     requires com.fasterxml.jackson.core;
 
-    opens com.example.restserviceclient to javafx.fxml;
+    // permite accesul reflectiv pentru controlleri FXML
+    opens com.example.restserviceclient.view to javafx.fxml;
+
+    // adaugă-l pentru ca SceneLoader să poată accesa clasele din view
+    exports com.example.restserviceclient.view;
+
+    // deja exportai pachetul principal
     exports com.example.restserviceclient;
 }

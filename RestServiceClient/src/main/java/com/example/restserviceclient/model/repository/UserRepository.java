@@ -18,16 +18,18 @@ public class UserRepository {
     public List<Users> getAll() {
         try {
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(baseUrl))
-                    .GET().build();
+                    .uri(URI.create("http://localhost:8080/api/users"))
+                    .GET()
+                    .build();
 
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
             return Arrays.asList(mapper.readValue(response.body(), Users[].class));
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace(); // asigură-te că vezi erorile
             return List.of();
         }
     }
+
 
     public Users getById(int id) {
         try {

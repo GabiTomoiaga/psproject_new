@@ -2,46 +2,54 @@ package com.example.restserviceclient.view;
 
 import com.example.restserviceclient.model.repository.PerfumeRepository;
 import com.example.restserviceclient.model.repository.StockRepository;
-import com.example.restserviceclient.presenter.EmployeePresenter;
+import com.example.restserviceclient.presenter.ManagerPresenter;
 import javafx.fxml.FXML;
 
-public class EmployeeViewController {
+public class ManagerViewController {
 
-    private EmployeePresenter presenter;
+    private ManagerPresenter presenter;
 
     @FXML
     public void initialize() {
-        presenter = new EmployeePresenter(
+        presenter = new ManagerPresenter(
                 new PerfumeRepository(),
-                new StockRepository(),
-                1
+                new StockRepository()
         );
         presenter.init();
     }
 
-    @FXML private void handleAdd() {
+    @FXML
+    private void handleAdd() {
         presenter.handleAdd();
     }
 
-    @FXML private void handleUpdate() {
+    @FXML
+    private void handleUpdate() {
         presenter.handleUpdate();
     }
 
-    @FXML private void handleDelete() {
+    @FXML
+    private void handleDelete() {
         presenter.handleDelete();
     }
 
-    @FXML private void handleSearch() {
+    @FXML
+    private void handleSearch() {
         presenter.handleSearch();
     }
 
-    @FXML private void handleApply() {
+    @FXML
+    private void handleApply() {
         presenter.handleApplyFilters();
     }
 
-    @FXML private void handleReset() {
+    @FXML
+    private void handleReset() {
         presenter.handleReset();
     }
 
-
+    @FXML
+    private void handleExport() {
+        presenter.handleExport();
+    }
 }

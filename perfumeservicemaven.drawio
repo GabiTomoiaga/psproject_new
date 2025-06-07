@@ -1,0 +1,237 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram id="u5KrdOL9-9HptxetqhuU" name="Page-1">
+    <mxGraphModel dx="3284" dy="1252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-1" value="&lt;font style=&quot;font-size: 67px;&quot;&gt;Model&lt;/font&gt;" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+          <mxGeometry x="-790" y="50" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-3" value="&lt;font style=&quot;font-size: 67px;&quot;&gt;Domain&lt;/font&gt;" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" parent="1" vertex="1">
+          <mxGeometry x="-390" y="50" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="lcvftNJlrSMsZ2YS-3Oc-4" target="lcvftNJlrSMsZ2YS-3Oc-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-4" value="&lt;font style=&quot;font-size: 67px;&quot;&gt;Services&lt;/font&gt;" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
+          <mxGeometry x="-10" y="50" width="320" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=82;entryPerimeter=0;" parent="1" source="lcvftNJlrSMsZ2YS-3Oc-1" target="lcvftNJlrSMsZ2YS-3Oc-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-7" value="Model" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-970" y="510" width="1330" height="880" as="geometry" />
+        </mxCell>
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-8" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" parent="lcvftNJlrSMsZ2YS-3Oc-7" vertex="1">
+          <mxGeometry width="1330" height="933.5219236209335" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UserRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ UserRepository(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ addUser(Users): Boolean&lt;br/&gt;+ deleteUser(Users): Boolean&lt;br/&gt;+ listUsers(): List&amp;lt;Users&amp;gt;&lt;br/&gt;+ updateUser(Users): Boolean&lt;br/&gt;+ searchUserByName(String): Users&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="lcvftNJlrSMsZ2YS-3Oc-7" vertex="1">
+          <mxGeometry x="60" y="62.23479490806223" width="258" height="241.47100424328147" as="geometry" />
+        </mxCell>
+        <mxCell id="node14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StoreRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ StoreRepository(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ listStores(): List&amp;lt;Store&amp;gt;&lt;br/&gt;+ updateStore(Store): Boolean&lt;br/&gt;+ searchStore(String): Store&lt;br/&gt;+ addStore(Store): Boolean&lt;br/&gt;+ deleteStore(Store): Boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="lcvftNJlrSMsZ2YS-3Oc-7" vertex="1">
+          <mxGeometry x="570" y="69.99958981612446" width="223" height="241.47100424328147" as="geometry" />
+        </mxCell>
+        <mxCell id="node4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PerfumeRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ PerfumeRepository(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ updatePerfume(Perfume): Boolean&lt;br/&gt;+ deletePerfume(Perfume): Boolean&lt;br/&gt;+ listPerfumes(): List&amp;lt;Perfume&amp;gt;&lt;br/&gt;+ searchPerfume(String): Perfume&lt;br/&gt;+ addPerfume(Perfume): Boolean&lt;br/&gt;+ filterPerfumes(List&amp;lt;Perfume&amp;gt;, String, Boolean, Double, Integer): List&amp;lt;Perfume&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="lcvftNJlrSMsZ2YS-3Oc-7" vertex="1">
+          <mxGeometry x="30" y="340" width="516" height="218.83" as="geometry" />
+        </mxCell>
+        <mxCell id="node24" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StockRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ StockRepository(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ updateStock(Stock): Boolean&lt;br/&gt;+ getStock(Integer, Integer): Stock&lt;br/&gt;+ listStocksByStore(Integer): List&amp;lt;Stock&amp;gt;&lt;br/&gt;+ addStock(Stock): Boolean&lt;br/&gt;+ listAllStocks(): List&amp;lt;Stock&amp;gt;&lt;br/&gt;+ deleteStock(Integer, Integer): Boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="lcvftNJlrSMsZ2YS-3Oc-7" vertex="1">
+          <mxGeometry x="30" y="610" width="294" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="lcvftNJlrSMsZ2YS-3Oc-7" source="node20" target="node14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="lcvftNJlrSMsZ2YS-3Oc-7" source="node20" target="node0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="480" />
+              <mxPoint x="670" y="480" />
+              <mxPoint x="670" y="320" />
+              <mxPoint x="430" y="320" />
+              <mxPoint x="430" y="183" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="lcvftNJlrSMsZ2YS-3Oc-7" source="node20" target="node4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="460" />
+              <mxPoint x="610" y="449" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lcvftNJlrSMsZ2YS-3Oc-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="lcvftNJlrSMsZ2YS-3Oc-7" source="node20" target="node24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="647" y="420" />
+              <mxPoint x="647" y="725" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node20" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Repository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Repository(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- connection: Connection&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ closeConnection(): void&lt;br/&gt;+ getTable(String): ResultSet&lt;br/&gt;+ openConnection(): void&lt;br/&gt;+ executeCommand(String): ResultSet&lt;br/&gt;+ executeUpdate(String): boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; connection: Connection&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="lcvftNJlrSMsZ2YS-3Oc-7" vertex="1">
+          <mxGeometry x="970" y="315" width="270" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-1" value="Domain" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-970" y="1413" width="1420" height="1337" as="geometry" />
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-2" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" parent="Dhjnj_qx2V3kFuxRjcvy-1" vertex="1">
+          <mxGeometry width="1380" height="1418.3168316831682" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="283.2631578947368" y="556.8301136363636" as="sourcePoint" />
+            <mxPoint x="283.2631578947368" y="587.2164772727273" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node19" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Perfume&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Perfume(Perfume): &lt;br/&gt;+ Perfume(): &lt;br/&gt;+ Perfume(Integer, String, String, Double, String): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- id: Integer&lt;br/&gt;- price: Double&lt;br/&gt;- name: String&lt;br/&gt;- description: String&lt;br/&gt;- brand: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: String&lt;br/&gt; description: String&lt;br/&gt; price: Double&lt;br/&gt; brand: String&lt;br/&gt; id: Integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" vertex="1">
+          <mxGeometry x="460" y="527" width="346" height="384" as="geometry" />
+        </mxCell>
+        <mxCell id="node23" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IPerfumeRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ updatePerfume(Perfume): Boolean&lt;br/&gt;+ listPerfumes(): List&amp;lt;Perfume&amp;gt;&lt;br/&gt;+ filterPerfumes(List&amp;lt;Perfume&amp;gt;, String, Boolean, Double, Integer): List&amp;lt;Perfume&amp;gt;&lt;br/&gt;+ addPerfume(Perfume): Boolean&lt;br/&gt;+ deletePerfume(Perfume): Boolean&lt;br/&gt;+ searchPerfume(String): Perfume&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" vertex="1">
+          <mxGeometry x="20" y="83.5" width="516" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="node18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Stock&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Stock(Integer, Integer, Integer, Integer): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- stockId: Integer&lt;br/&gt;- storeId: Integer&lt;br/&gt;- quantity: Integer&lt;br/&gt;- pefumeId: Integer&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; pefumeId: Integer&lt;br/&gt; quantity: Integer&lt;br/&gt; stockId: Integer&lt;br/&gt; storeId: Integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" vertex="1">
+          <mxGeometry x="80" y="737" width="298" height="276" as="geometry" />
+        </mxCell>
+        <mxCell id="node16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Store&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Store(Integer, String, String): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- location: String&lt;br/&gt;- id: Integer&lt;br/&gt;- name: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: String&lt;br/&gt; id: Integer&lt;br/&gt; location: String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" vertex="1">
+          <mxGeometry x="470" y="957" width="231" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="node12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IStoreRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ updateStore(Store): Boolean&lt;br/&gt;+ searchStore(String): Store&lt;br/&gt;+ addStore(Store): Boolean&lt;br/&gt;+ deleteStore(Store): Boolean&lt;br/&gt;+ listStores(): List&amp;lt;Store&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" vertex="1">
+          <mxGeometry x="900" y="97" width="223" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" source="node5" target="node3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;UsersType&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ UsersType(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ valueOf(String): UsersType&lt;br/&gt;+ values(): UsersType[]&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" vertex="1">
+          <mxGeometry x="460" y="317" width="214" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="node3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Users&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Users(Integer, String, String, UsersType, Integer): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- id: Integer&lt;br/&gt;- name: String&lt;br/&gt;- role: UsersType&lt;br/&gt;- password: String&lt;br/&gt;- storeId: Integer&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; role: UsersType&lt;br/&gt; name: String&lt;br/&gt; password: String&lt;br/&gt; id: Integer&lt;br/&gt; storeId: Integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" vertex="1">
+          <mxGeometry x="29" y="327" width="361" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="node25" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IUserRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ deleteUser(Users): Boolean&lt;br/&gt;+ addUser(Users): Boolean&lt;br/&gt;+ updateUser(Users): Boolean&lt;br/&gt;+ listUsers(): List&amp;lt;Users&amp;gt;&lt;br/&gt;+ searchUserByName(String): Users&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" vertex="1">
+          <mxGeometry x="1140" y="97" width="258" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="node10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IStockRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ listStocksByStore(Integer): List&amp;lt;Stock&amp;gt;&lt;br/&gt;+ updateStock(Stock): Boolean&lt;br/&gt;+ listAllStocks(): List&amp;lt;Stock&amp;gt;&lt;br/&gt;+ getStock(Integer, Integer): Stock&lt;br/&gt;+ addStock(Stock): Boolean&lt;br/&gt;+ deleteStock(Integer, Integer): Boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-1" vertex="1">
+          <mxGeometry x="570" y="87" width="294" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.523;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="node4" target="node23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-390" y="1000" />
+              <mxPoint x="-390" y="1283" />
+              <mxPoint x="-540" y="1283" />
+              <mxPoint x="-540" y="1420" />
+              <mxPoint x="-650" y="1420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="node24" target="node10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-223" y="1260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node14" target="node12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-80" y="701" />
+              <mxPoint x="-80" y="1340" />
+              <mxPoint x="72" y="1340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="node0" target="node25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-781" y="570" />
+              <mxPoint x="300" y="570" />
+              <mxPoint x="300" y="1410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-19" value="Service" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-970" y="2800" width="1420" height="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-20" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" parent="Dhjnj_qx2V3kFuxRjcvy-19" vertex="1">
+          <mxGeometry width="1380" height="1336.6336633663366" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dhjnj_qx2V3kFuxRjcvy-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Dhjnj_qx2V3kFuxRjcvy-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="463.66492146596863" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwfNWKDKww8mRZxTeNsi-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Dhjnj_qx2V3kFuxRjcvy-19" source="node26" target="node6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node26" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IPerfumeService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ updatePerfume(Perfume): boolean&lt;br/&gt;+ filterPerfumes(String, Boolean, Double, Integer): List&amp;lt;Perfume&amp;gt;&lt;br/&gt;+ addPerfume(Perfume): boolean&lt;br/&gt;+ getPerfumesByStore(int): List&amp;lt;Perfume&amp;gt;&lt;br/&gt;+ searchByName(String): Perfume&lt;br/&gt;+ deletePerfume(Perfume): boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; allPerfumes: List&amp;lt;Perfume&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-19" vertex="1">
+          <mxGeometry x="40" y="122.91999999999999" width="441" height="240.77" as="geometry" />
+        </mxCell>
+        <mxCell id="node6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PerfumeService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ PerfumeService(IPerfumeRepository, IStockRepository): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ searchByName(String): Perfume&lt;br/&gt;+ filterPerfumes(String, Boolean, Double, Integer): List&amp;lt;Perfume&amp;gt;&lt;br/&gt;+ deletePerfume(Perfume): boolean&lt;br/&gt;+ getPerfumesByStore(int): List&amp;lt;Perfume&amp;gt;&lt;br/&gt;+ updatePerfume(Perfume): boolean&lt;br/&gt;+ addPerfume(Perfume): boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; allPerfumes: List&amp;lt;Perfume&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-19" vertex="1">
+          <mxGeometry x="600" y="106.62" width="441" height="273.38" as="geometry" />
+        </mxCell>
+        <mxCell id="node21" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UserService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ UserService(IUserRepository): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getUserByName(String): Users&lt;br/&gt;+ getUsersByRole(UsersType): List&amp;lt;Users&amp;gt;&lt;br/&gt;+ updateUser(Users): boolean&lt;br/&gt;+ deleteUser(Users): boolean&lt;br/&gt;+ addUser(Users): boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; allUsers: List&amp;lt;Users&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-19" vertex="1">
+          <mxGeometry x="630" y="420" width="306" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="gwfNWKDKww8mRZxTeNsi-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Dhjnj_qx2V3kFuxRjcvy-19" source="node22" target="node21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node22" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IUserService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ updateUser(Users): boolean&lt;br/&gt;+ deleteUser(Users): boolean&lt;br/&gt;+ addUser(Users): boolean&lt;br/&gt;+ getUsersByRole(UsersType): List&amp;lt;Users&amp;gt;&lt;br/&gt;+ getUserByName(String): Users&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; allUsers: List&amp;lt;Users&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-19" vertex="1">
+          <mxGeometry x="60" y="430" width="306" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="node13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StockService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ StockService(IStockRepository): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ addStock(Stock): boolean&lt;br/&gt;+ deleteStock(Integer, Integer): boolean&lt;br/&gt;+ getStockByStoreAndPerfume(int, int): Stock&lt;br/&gt;+ updateStock(Stock): boolean&lt;br/&gt;+ getStockByStore(int): List&amp;lt;Stock&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; allStock: List&amp;lt;Stock&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-19" vertex="1">
+          <mxGeometry x="640" y="720" width="320" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="gwfNWKDKww8mRZxTeNsi-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Dhjnj_qx2V3kFuxRjcvy-19" source="node11" target="node13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IStockService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getStockByStoreAndPerfume(int, int): Stock&lt;br/&gt;+ updateStock(Stock): boolean&lt;br/&gt;+ addStock(Stock): boolean&lt;br/&gt;+ getStockByStore(int): List&amp;lt;Stock&amp;gt;&lt;br/&gt;+ deleteStock(Integer, Integer): boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; allStock: List&amp;lt;Stock&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-19" vertex="1">
+          <mxGeometry x="60" y="734" width="320" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="node7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StoreService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ StoreService(IStoreRepository): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ searchStoreByName(String): Store&lt;br/&gt;+ deleteStore(Store): boolean&lt;br/&gt;+ updateStore(Store): boolean&lt;br/&gt;+ addStore(Store): boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; allStores: List&amp;lt;Store&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-19" vertex="1">
+          <mxGeometry x="691" y="1010" width="259" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="gwfNWKDKww8mRZxTeNsi-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Dhjnj_qx2V3kFuxRjcvy-19" source="node9" target="node7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;IStoreService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ updateStore(Store): boolean&lt;br/&gt;+ deleteStore(Store): boolean&lt;br/&gt;+ searchStoreByName(String): Store&lt;br/&gt;+ addStore(Store): boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; allStores: List&amp;lt;Store&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="Dhjnj_qx2V3kFuxRjcvy-19" vertex="1">
+          <mxGeometry x="100" y="1024" width="259" height="167" as="geometry" />
+        </mxCell>
+        <mxCell id="gwfNWKDKww8mRZxTeNsi-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="node19" target="node6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-140" y="2132" />
+              <mxPoint x="-140" y="2615" />
+              <mxPoint x="-149" y="2615" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwfNWKDKww8mRZxTeNsi-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="node16" target="node7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gwfNWKDKww8mRZxTeNsi-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="node18" target="node13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-741" y="2630" />
+              <mxPoint x="-470" y="2630" />
+              <mxPoint x="-470" y="3600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwfNWKDKww8mRZxTeNsi-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.579;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="node3" target="node21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-910" y="2770" />
+              <mxPoint x="-450" y="2770" />
+              <mxPoint x="-450" y="3365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

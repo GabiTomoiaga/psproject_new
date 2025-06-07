@@ -29,15 +29,15 @@ public class EmployeePresenter {
     }
 
     public void init() {
-        id = (TextField) lookup("#id");
+        id = (TextField) lookup("#idField");
         name = (TextField) lookup("#name");
-        brand = (TextField) lookup("#brand");
+        brand = (TextField) lookup("#brandField");
         price = (TextField) lookup("#price");
         description = (TextField) lookup("#description");
         search = (TextField) lookup("#search");
-        table = (TableView<Perfume>) lookup("#list");
+        table = (TableView<Perfume>) lookup("#perfumeTable");
 
-        filterBrand = (ChoiceBox<String>) lookup("#brand");
+        filterBrand = (ChoiceBox<String>) lookup("#brandFilter");
         filterPrice = (ChoiceBox<String>) lookup("#price");
         checkDisponibility = (CheckBox) lookup("#disponibility");
 

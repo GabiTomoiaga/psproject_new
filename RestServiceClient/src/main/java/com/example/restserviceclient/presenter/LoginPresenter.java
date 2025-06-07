@@ -44,9 +44,9 @@ public class LoginPresenter {
             if (u.getName().equals(user) && u.getPassword().equals(pass)) {
                 Scene scene = username.getScene();
                 switch (u.getRole().toString()) {
-                    case "EMPLOYEE" -> SceneLoader.loadScene("/frontend/view/EmployeeView.fxml", scene);
-                    case "MANAGER"  -> SceneLoader.loadScene("/frontend/view/ManagerView.fxml", scene);
-                    case "ADMIN"    -> SceneLoader.loadScene("/frontend/view/AdminView.fxml", scene);
+                    case "EMPLOYEE" -> SceneLoader.loadScene("/com/example/restserviceclient/EmployeeView.fxml", scene);
+                    case "MANAGER"  -> SceneLoader.loadScene("/com/example/restserviceclient/ManagerView.fxml", scene);
+                    case "ADMIN"    -> SceneLoader.loadScene("/com/example/restserviceclient/AdminView.fxml", scene);
                 }
                 return;
             }
